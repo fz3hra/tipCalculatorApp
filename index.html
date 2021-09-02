@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>Calclator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.svg" alt="logo" class="mx-auto mt-4 md-4 d-block ">
+        </div>
+        <div class="card mt-3" style="height: 40rem;">
+            <div class="bill mt-3 mx-3">
+                <div class="billValue">
+                    <label for="bill" class="mb-1">bill</label>
+                    <br>
+                    <input type="number" id="bill" style="height: 38px; width: 27.5rem;" min ="0" placeholder="00.00" class="form-control" type="number" name="bill">
+                </div>
+            </div>
+            <div class="tip">
+                <div class="tipValue mx-3 text-center">
+                    <label for="">select tip %</label>
+                    <div class="button row">
+                        <!-- add hover effect to button and change colour -->
+                        <div class="col-6 mb-2">
+                            <!-- <button class="p-1 w-50  border-0 bg-light" type="button">5%</button> -->
+                            <input type="button" value="5" class="p-1 w-50 border-0 tipArea">
+                        </div>
+                        <div class="col-6">
+                            <input type="button" value="10" class="p-1 w-50 border-0 tipArea">
+                        </div>
+                        <div class="col-6 mb-2">
+                            <input type="button" value="15" class="p-1 w-50 buttonChange border-0 tipArea">
+                        </div>
+                        <div class="col-6">
+                            <input type="button" value="20" class="p-1 w-50 border-0 tipArea">
+                        </div>
+                        <div class="col-6 mb-2">
+                            <input type="button" value="25" class="p-1 w-50 border-0 tipArea">
+                        </div>
+                        <div class="col-6">
+                            <!-- change to input -->
+                            <!-- <button class="p-1 w-50" type="button">custom%</button> -->
+                            <input type="number" class="p-1 w-50  border-0 white custom" placeholder="custom" id="custom" name="custom" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="people">
+                <div class="peopleSlot mt-3 mx-3">
+                    <label for="people" class="mb-1 people">number of people</label>
+                    <br>
+                    <input type="number" id="people" style="height: 38px; width: 27.5rem;" placeholder="0" class="form-control" min="0">
+                </div>
+            </div>
+            <div class="display text-center mx-auto mt-4" style="height: 16rem; width: 25rem;">
+                <!-- tip amount -->
+                <h4 class="text-white value">tip amount <span class="tipAmount">0.00</span></h6>
+                <p class="text-white">/ person</p>
+                <!-- total per person -->
+                <h4 class="text-white value">Total Amount <span class="totalAmount">0.00</span></h6>
+                <p class="text-white">/ person</p>
+                <!-- reset button -->
+                <input type="button" value="reset" class="border-0 reset" placeholder="reset">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>

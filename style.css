@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(197, 228, 231);
+}
+
+input {
+  background-color: rgb(0, 73, 77);
+}
+
+.buttonChange {
+  background-color: rgb(38, 192, 171);
+}
+
+.display {
+  background-color: #00494d;
+  border-radius: 15px;
+}
+.display input {
+  background-color: rgb(38, 192, 171);
+  color: #00494d;
+  font-weight: bold;
+  padding: 9px;
+  border-radius: 5px;
+  margin-top: 40px;
+  width: 20rem;
+}
+
+.custom {
+  background-color: wheat;
+}
